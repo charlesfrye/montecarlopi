@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "montecarlopi"
+version = "0.1.0"
+description = "demo rust extension for python"
+authors = ["Charles Frye <cfrye59@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/charlesfrye/montecarlopi"
+repository = "https://github.com/charlesfrye/montecarlopi"
+packages = [
+    { include = "montecarlopi", from = "src/python"}
+]
+build = "build.py"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+psutil = "^5.8.0"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4.0.1"
+
+[tool.poetry.scripts]
+pure-python = "montecarlopi.run:bench_python"
+rust-extension = "montecarlopi.run:bench_rust"
+compare = "montecarlopi.run:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

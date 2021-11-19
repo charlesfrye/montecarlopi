@@ -1,0 +1,13 @@
+# poetry build/distribution files
+build/
+dist/
+setup.py
+
+# python
+__pycache__/*
+
+# libraries
+*.so
+*.dylib
+*.pyd
+*.dll
