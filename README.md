@@ -6,7 +6,7 @@ Based on [this video](https://www.youtube.com/watch?v=yqLD22sIYMo).
 
 # Build
 
-> Only checked on Ubuntu 18.04 with one version of Rust!
+> ACHTUNG: Only checked on Ubuntu 18.04 with one version of Rust!
 
 ```bash
 poetry build
