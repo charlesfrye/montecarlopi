@@ -7,7 +7,7 @@ readme = "README.md"
 homepage = "https://github.com/charlesfrye/montecarlopi"
 repository = "https://github.com/charlesfrye/montecarlopi"
 packages = [
-    { include = "montecarlopi", from = "src/python"}
+    { include = "montecarlopi", from = "build/lib"}
 ]
 build = "build.py"
 
